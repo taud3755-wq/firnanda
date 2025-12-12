@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-size:30px">Menit.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNews" aria-controls="navbarNews" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNews">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Nasional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Internasional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Olahraga</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Teknologi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Hiburan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- MARQUEE BAR -->
+  <div class="bg-danger text-white py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <marquee behavior="scroll" direction="left" class="fw-semibold">
+        [Populer] kebijakan baru ekonomi  • keracunan mbg • indonesia gagal masuk piala dunia •  banjir besar di kabupaten Aceh • aksi demo di jakarta • berita Majalengka 
+      </marquee>
+      <div id="clock" class="fw-bold px-2 text-end" style="width:300px"></div>
+    </div>
+  </div>
+<br>;
+<div class="container">
+    <div class="row">
+        <!-- Carousel Berita -->
+      <div class="col-md-8">
+        <div id="carouselNews" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/1.jpg" class="d-block w-100 rounded" alt="Berita 1">
+              <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Berita Utama Hari Ini</h5>
+                <p>Pemerintah siapkan strategi baru hadapi ekonomi global 2025.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/2.jpg" class="d-block w-100 rounded" alt="Berita 2">
+              <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Berita makan gizi gratis</h5>
+                <p>Seorang pelajar smp keracunan makan gizi gratis (MBG)</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/3.jpg" class="d-block w-100 rounded" alt="Berita 3">
+              <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Timnas Indonesia </h5>
+                <p>Timnas Indonesia dipastikan tidak masuk piala dunia.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/4.jpg" class="d-block w-100 rounded" alt="Berita 4">
+              <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Konser Musik Terbesar 2025</h5>
+                <p>Ribuan penonton padati stadion untuk menyaksikan konser internasional.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/5.jpg" class="d-block w-100 rounded" alt="Berita 5">
+              <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Pemilu 2025 Semakin Dekat</h5>
+                <p>Partai politik mulai deklarasikan calon presiden.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNews" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNews" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+        <div class="col-md-4">
+            <div class="card p-3 bg-info h-100">
+                <h2 class="text-center text-light">Berita Populer</h2>
+                <a href="" class="btn btn-light mb-1 p-3">Pemerintah siapkan strategi baru hadapi ekonomi global 2025</a>
+                <a href="" class="btn btn-light mb-1 p-3">Seorang pelajar smp keracunan makan gizi gratis (MBG)</a>
+                <a href="" class="btn btn-light mb-1 p-3">Timnas Indonesia dipastikan tidak masuk piala dunia </a>
+                <a href="" class="btn btn-light mb-1 p-3">Banjir besar di kabupaten Aceh </a>
+                <a href="" class="btn btn-light mb-1 p-3">berita Majalengka </a>
+            </div>
+        </div>
+    </div>
+
+<hr>
+<h4>Berita Utama</h4>
+<hr>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/1.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Kebijakan Ekonomi Baru 2025</h6>
+            <p class="news-summary">Pemerintah meluncurkan kebijakan untuk mempercepat pemulihan ekonomi nasional.</p>
+            <a href="berita_kebijakan_indonesia_baru.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+        
+        <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/2.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">seseorang siswa keracunan makan gizi gratis (MBG)</h6>
+            <p class="news-summary">Siswa yang keracunan menu Makan Bergizi Gratis (MBG) di Kecamatan Cisarua, Kabupaten Bandung Barat (KBB), bertambah menjadi 345 orang. Para korban merupakan siswa SD hingga SMK.</p>
+            <a href="berita_mbg.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/3.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">indonesia dipastikan gagal lolos ke piala dunia </h6>
+            <p class="news-summary">timnas Indonesia sudah gagal lolos ke Piala Dunia 2026. Kini, tanggung jawab para pemimpin di PSSI ditagih para suporter.</p>
+            <a href="berita_timnas_indonesia_gagal_masuk_piala_dunia.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/4.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">banjir besar di kabupaten Aceh tenggara </h6>
+            <p class="news-summary">Banjir bandang melanda Kabupaten Aceh Tenggara, Provinsi Aceh pada Kamis malam (28/3/2019). Jumlah warga yang mengungsi akibat bencana ini masih dalam pendataan pihak terkait..</p>
+            <a href="banjir_besar.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/5.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">aksi demo di jakarta </h6>
+            <p class="news-summary">Bandung - Pada Jumat, 29 Agustus 2025, jalanan Kota Bandung mendadak bergolak. Massa memenuhi depan kantor DPRD Jawa Barat (Jabar), yang membuat demonstrasi di sana sejak awal langsung berubah menjadi situasi yang mencekam.</p>
+            <a href="demokrasi.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/6.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Berita Majalengka </h6>
+            <p class="news-summary">Fenomena panas ekstrem kembali terjadi di beberapa wilayah Indonesia. Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) mencatat suhu maksimum harian mencapai 34-36 derajat celsius dalam 24 jam terakhir, menandai tingginya intensitas panas di sejumlah daerah..</p>
+            <a href="info_majalengka.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+<!-- FOOTER -->
+  <footer class="bg-dark text-light">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Menit.com</h5>
+          <p>Portal berita terpercaya yang menyajikan informasi terkini, akurat, dan mendalam dari berbagai bidang.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Kategori</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="nav-link">Nasional</a></li>
+            <li><a href="#"class="nav-link">Internasional</a></li>
+            <li><a href="#"class="nav-link">Teknologi</a></li>
+            <li><a href="#"class="nav-link">Olahraga</a></li>
+            <li><a href="#"class="nav-link">Hiburan</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Kontak</h5>
+          <p>Email: redaksi@menit.com<br>Telepon: +62 812 3456 7890</p>
+          <div>
+            <a href="#" class="me-3 nav-link">Facebook</a>
+            <a href="#" class="me-3 nav-link">Twitter</a>
+            <a href="#"class="nav-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">© 2025 Menit.com. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+<script>
+    // Menampilkan jam real-time
+    setInterval(() => {
+      const now = new Date();
+      document.getElementById('clock').textContent = now.toLocaleString('id-ID');
+    }, 1000);
+  </script>
+</body>
+</html>

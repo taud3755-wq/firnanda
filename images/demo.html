@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Menit.com - Portal Berita</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="font-size:30px">Menit.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNews" aria-controls="navbarNews" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNews">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Nasional</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Internasional</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Olahraga</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Teknologi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Hiburan</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MARQUEE BAR -->
+<div class="bg-danger text-white py-2">
+  <div class="container d-flex justify-content-between align-items-center">
+    <marquee behavior="scroll" direction="left" class="fw-semibold">
+     [Populer] kebijakan baru ekonomi  • keracunan mbg • indonesia gagal masuk piala dunia •  banjir besar di kabupaten Aceh • aksi demo di jakarta • berita Majalengka
+    </marquee>
+    <div id="clock" class="fw-bold px-2 text-end" style="width:300px"></div>
+  </div>
+</div>
+
+<!-- KONTEN UTAMA -->
+<div class="container my-4">
+  <div class="row">
+    <!-- BERITA UTAMA -->
+    <div class="col-md-8 mb-4">
+      <h3>Demokrasi</h3>
+      <small>Kamis, 16 Oktober 2025 07:00:00 | By Admin</small>
+      <img src="images/5.jpg" class="img-thumbnail mt-3 mb-3" alt="Kebijakan ekonomi baru 2025">
+      <p>
+Bandung - Pada Jumat, 29 Agustus 2025, jalanan Kota Bandung mendadak bergolak. Massa memenuhi depan kantor DPRD Jawa Barat (Jabar), yang membuat demonstrasi di sana sejak awal langsung berubah menjadi situasi yang mencekam.
+</p>
+<p>
+Dalam reportase detikJabar, massa yang terdiri dari mahasiswa, ojol hingga masyarakat biasa itu turun ke jalan untuk menyampaikan tuntutannya. Pemicu utamanya terjadi karena publik geram dengan sikap anggota DPR RI yang terkesan abai atas kesulitan yang dirasakan.
+</p>
+<p>
+Namun, arena demonstrasi di depan gedung DPRD Jabar sejak awal langsung diwarnai kericuhan. Massa datang sekitar pukul 14.00 WIB, dan kemudian malah menyerang aparat yang sedang berjaga.
+      </p>
+    </div>
+
+    <!-- BERITA POPULER -->
+   <div class="card p-3 bg-info h-100">
+                <h2 class="text-center text-light">Berita Populer</h2>
+                <a href="" class="btn btn-light mb-1 p-3">Pemerintah siapkan strategi baru hadapi ekonomi global 2025</a>
+                <a href="" class="btn btn-light mb-1 p-3">Seorang pelajar smp keracunan makan gizi gratis (MBG)</a>
+                <a href="" class="btn btn-light mb-1 p-3">Timnas Indonesia dipastikan tidak masuk piala dunia </a>
+                <a href="" class="btn btn-light mb-1 p-3">Banjir besar di kabupaten Aceh </a>
+                <a href="" class="btn btn-light mb-1 p-3">berita Majalengka </a>
+      </div>
+    </div>
+  </div>
+  <hr>
+<!-- FOOTER -->
+<footer class="bg-dark text-light mt-5">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Menit.com</h5>
+        <p>Portal berita terpercaya yang menyajikan informasi terkini, akurat, dan mendalam dari berbagai bidang.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Kategori</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="nav-link">Nasional</a></li>
+          <li><a href="#" class="nav-link">Internasional</a></li>
+          <li><a href="#" class="nav-link">Teknologi</a></li>
+          <li><a href="#" class="nav-link">Olahraga</a></li>
+          <li><a href="#" class="nav-link">Hiburan</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Kontak</h5>
+        <p>Email: redaksi@menit.com<br>Telepon: +62 812 3456 7890</p>
+        <div>
+          <a href="#" class="me-3 nav-link">Facebook</a>
+          <a href="#" class="me-3 nav-link">Twitter</a>
+          <a href="#" class="nav-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="text-center mb-0">© 2025 Menit.com. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- SCRIPT JAM -->
+<script>
+  setInterval(() => {
+    const now = new Date();
+    document.getElementById('clock').textContent = now.toLocaleString('id-ID');
+  }, 1000);
+</script>
+
+</body>
+</html>
